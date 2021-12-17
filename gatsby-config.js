@@ -1,14 +1,10 @@
-let activeEnv = process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || 'development';
+//let activeEnv = process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || 'development';
 
-require('dotenv').config({
-  path: `.env.${activeEnv}`,
-});
+//require('dotenv').config({
+//  path: `.env.${activeEnv}`,
+//});
 
 module.exports = {
-  siteMetadata: {
-    title: `STUDIO GANIMED Architects`,
-    siteUrl: `https://ganimed.bg`,
-  },
   plugins: [
     {
       resolve: `gatsby-plugin-sass`,
@@ -16,12 +12,12 @@ module.exports = {
         additionalData: `@import "${__dirname}/src/assets/scss/bootstrap-variables";`,
       },
     },
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: 'UI-111AAA',
-      },
-    },
+    //{
+    //  resolve: 'gatsby-plugin-google-analytics',
+    //  options: {
+    //    trackingId: 'UI-111AAA',
+    //  },
+    //},
     'gatsby-plugin-react-helmet',
     //'gatsby-plugin-sitemap',
   ],

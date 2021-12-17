@@ -7,9 +7,6 @@
 node_modules
 dist
 
-# IntelliJ Idea files
-.idea
-
 # Logs
 logs
 *.log
